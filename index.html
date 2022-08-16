@@ -7,10 +7,70 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="./dist/main.css" />
     <script src="./dist/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Budget Diet Planner</title>
+    
   </head>
-
+  
   <body>
-  </body>
+    <div>
+      <h1 id="initial">See You Next Year Diet Planner</h1>
+      <h2 id="second">See what happens if you eat this self-designed diet for a Year</h2>
+    </div>
 
-</html>
+
+   
+      
+      
+    <div class="all">
+      <div class="store">
+        <h2 id="menut">Healthy Options</h2>
+        <p id="ins">A list of food options are provided;</p>
+        <p id="ins">Hover on them to see nutrition facts;</p>
+        <p id="ins">Add item to menu to see how this meal</p>
+        <p id="ins">plan will change your body in a Year!</p>
+
+        <ul class="menu">
+          <li ><a href="#" class="items" title=""><img src="./img/apple.png" alt=""></a>Apple <button name="Apple" class="adding">Add Item</button></li>
+          <li><a href="#" class="items" title=""><img src="./img/avocado-transparent-2.png" alt=""></a>Avocado<button name="Avacado" class="adding">Add Item</button></li>
+          <li><a href="#" class="items" title=""><img src="./img/banana.png" alt=""></a>Banana<button name="Banana" class="adding">Add Item</button></li>
+          <li><a href="#" class="items" title=""><img src="./img/egg.png" alt=""></a>Egg<button name="Egg" class="adding">Add Item</button></li>
+          <li><a href="#" class="items" title=""><img src="./img/turkey.png" alt=""></a>Turkey<button name="Turkey" class="adding">Add Item</button></li>
+          <li><a href="#" class="items" title=""><img src="./img/chicken.png" alt=""></a>Chicken<button name="Chicken" class="adding">Add Item</button></li>
+          <li><a href="#" class="items" title=""><img src="./img/beef.png" alt=""></a>Beef<button name="Beef" class="adding">Add Item</button></li>
+          <li><a href="#" class="items" title=""><img src="./img/salmon.png" alt=""></a>Salmon<button name="Salmon" class="adding">Add Item</button></li>
+          <li><a href="#" class="items" title=""><img src="./img/shrimp.png" alt=""></a>Shrimp<button name="Shrimp" class="adding">Add Item</button></li>
+          <li><a href="#" class="items" title=""><img src="./img/tuna.png" alt=""></a>Tuna<button name="Tuna" class="adding">Add Item</button></li>
+          <li><a href="#" class="items" title=""><img src="./img/broccoli.png" alt=""></a>Broccoli<button name="Broccoli" class="adding">Add Item</button></li>
+          <li><a href="#" class="items" title=""><img src="./img/brusselSprouts.png" alt=""></a>Sprouts<button name="Brussel-Sprouts" class="adding">Add Item</button></li>
+        </ul>
+      </div>
+
+      <div class="body-shape">
+        <h2 id="shape">Body Shape In A Year</h2>
+
+        <img id="person" src="./img/fatperson.png" alt="./img/fatperson.png">
+      </div>
+      
+      <div class="side-summary">
+        <h2>Menu Summary:</h2>
+         
+        <div class="container" style="height:80vh; width:20vw">
+          <canvas id="total" width="600" height="600"></canvas>
+        </div>
+
+        <ul class="summary-items"></ul>
+
+        <ul class="totals">
+          <li>Total Calories:</li>
+          <li>Total Fat Content:</li>
+          <li>Total Protein Content:</li>
+          <li>Total Carbohydrates Content:</li>
+        </ul>
+      </div> 
+
+    </div>
+    </body>
+    
+    </html>
