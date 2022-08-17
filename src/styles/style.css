@@ -20,10 +20,12 @@ body{
 #initial{
     display: flex;
     justify-content: center;
-    border: 1px solid black;
+    border-bottom: 1px solid black;
+    margin-top: 0px;
     padding: 10px;
-    background-color: lightblue;
+    background:linear-gradient(to top, rgb(100, 195, 227), white);
     font-family: 'Courier New', Courier, monospace;
+    font-size: 50px;
 }
 
 #second{
@@ -48,6 +50,31 @@ body{
     margin-left: -100px;
 }
 
+.hide {
+    display: none;
+    position: fixed;
+    background: white;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+#app:hover + .hide,
+#avo:hover + .hide,
+#ban:hover + .hide,
+#egg:hover + .hide,
+#tur:hover + .hide,
+#chi:hover + .hide,
+#bee:hover + .hide,
+#sal:hover + .hide,
+#shr:hover + .hide,
+#tun:hover + .hide,
+#bro:hover + .hide,
+#spr:hover + .hide {
+    display: block;
+    color: red;
+    margin-top: -425px;
+    margin-left: 70px;
+  }
 
 #menut{
     display: flex;

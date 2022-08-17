@@ -1,28 +1,28 @@
 
 
-export async function appleChart(){
-var query = 'apple'
+export async function avocadoChart(){
+var query = 'avocado'
 let url2 = 'https://api.calorieninjas.com/v1/nutrition?query=' + query
 
 const options2 = {
     method: 'GET',
     headers: { 'X-Api-Key': 'YBlM6hoP9sss2TahZxMmzQ==7bCcDDaLTNDilKG4'},
     contentType: 'application/json'
-  };
-  let appextract = JSON.parse(localStorage.getItem('appleObj'))
+};
 
-  if(!appextract){
-     appextract = await fetch(url2,options2)
+let avoextract = JSON.parse(localStorage.getItem('avocadoObj'))
+
+if(!avoextract){
+ avoextract = await fetch(url2,options2)
         .then(response => response.json())
         .catch(err => console.error(err));
-        // console.log(appextract)
-        localStorage.setItem('appleObj', JSON.stringify(appextract.items[0]))
-  }
+        localStorage.setItem('avocadoObj', JSON.stringify(avoextract.items[0]))
+        // console.log(extract)
+}
 
-  // console.log(appextract)
-  // console.log(appextract["carbohydrates_total_g"])
 
-let food = document.getElementById('apple').getContext('2d');
+
+let food = document.getElementById('avocado').getContext('2d');
 
 let pieChart = new Chart(food, {
   type:'doughnut', // bar,horizontal bar, pie, line doughnut, radar, polarArea
@@ -30,7 +30,7 @@ let pieChart = new Chart(food, {
     labels:['carbohydrates_total_g','fat_total_g','protein_g'],
     datasets:[{
       label: 'Nutritions',
-      data:[appextract.carbohydrates_total_g,appextract.fat_total_g,appextract.protein_g],
+      data:[avoextract.carbohydrates_total_g,avoextract.fat_total_g,avoextract.protein_g],
       backgroundColor: ['green','red','purple'],
     //   radius:[100]
     }]

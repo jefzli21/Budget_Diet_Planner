@@ -1,7 +1,7 @@
 
 
-export async function foodChart(){
-var query = 'brussel sprouts'
+export async function bananaChart(){
+var query = 'banana'
 let url2 = 'https://api.calorieninjas.com/v1/nutrition?query=' + query
 
 const options2 = {
@@ -14,7 +14,7 @@ let extract = await fetch(url2,options2)
         .then(response => response.json())
         .catch(err => console.error(err));
 
-        console.log(extract)
+        // console.log(extract)
 
 
 const data1 = [
@@ -26,10 +26,10 @@ const data1 = [
 const data = [extract.items[0].carbohydrates_total_g,extract.items[0].fat_total_g,extract.items[0].protein_g]
 
 
-let chickenBreast = document.getElementById('total').getContext('2d');
+let food = document.getElementById('banana').getContext('2d');
 
-let pieChart = new Chart(chickenBreast, {
-  type:'pie', // bar,horizontal bar, pie, line doughnut, radar, polarArea
+let pieChart = new Chart(food, {
+  type:'doughnut', // bar,horizontal bar, pie, line doughnut, radar, polarArea
   data:{
     labels:['carbohydrates_total_g','fat_total_g','protein_g'],
     datasets:[{

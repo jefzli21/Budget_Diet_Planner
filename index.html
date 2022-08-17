@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,22 +7,20 @@
     <link rel="stylesheet" href="./dist/main.css" />
     <script src="./dist/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Budget Diet Planner</title>
-    
   </head>
-  
+
   <body>
     <div>
       <h1 id="initial">See You Next Year Diet Planner</h1>
-      <h2 id="second">See what happens if you eat this self-designed diet for a Year</h2>
+      <h2 id="second">
+        See what happens if you eat this self-designed diet for a Year
+      </h2>
     </div>
 
-
-   
-      
-      
     <div class="all">
+      <!-- store of items -->
       <div class="store">
         <h2 id="menut">Healthy Options</h2>
         <p id="ins">A list of food options are provided;</p>
@@ -32,31 +29,129 @@
         <p id="ins">plan will change your body in a Year!</p>
 
         <ul class="menu">
-          <li ><a href="#" class="items" title=""><img src="./img/apple.png" alt=""></a>Apple <button name="Apple" class="adding">Add Item</button></li>
-          <li><a href="#" class="items" title=""><img src="./img/avocado-transparent-2.png" alt=""></a>Avocado<button name="Avacado" class="adding">Add Item</button></li>
-          <li><a href="#" class="items" title=""><img src="./img/banana.png" alt=""></a>Banana<button name="Banana" class="adding">Add Item</button></li>
-          <li><a href="#" class="items" title=""><img src="./img/egg.png" alt=""></a>Egg<button name="Egg" class="adding">Add Item</button></li>
-          <li><a href="#" class="items" title=""><img src="./img/turkey.png" alt=""></a>Turkey<button name="Turkey" class="adding">Add Item</button></li>
-          <li><a href="#" class="items" title=""><img src="./img/chicken.png" alt=""></a>Chicken<button name="Chicken" class="adding">Add Item</button></li>
-          <li><a href="#" class="items" title=""><img src="./img/beef.png" alt=""></a>Beef<button name="Beef" class="adding">Add Item</button></li>
-          <li><a href="#" class="items" title=""><img src="./img/salmon.png" alt=""></a>Salmon<button name="Salmon" class="adding">Add Item</button></li>
-          <li><a href="#" class="items" title=""><img src="./img/shrimp.png" alt=""></a>Shrimp<button name="Shrimp" class="adding">Add Item</button></li>
-          <li><a href="#" class="items" title=""><img src="./img/tuna.png" alt=""></a>Tuna<button name="Tuna" class="adding">Add Item</button></li>
-          <li><a href="#" class="items" title=""><img src="./img/broccoli.png" alt=""></a>Broccoli<button name="Broccoli" class="adding">Add Item</button></li>
-          <li><a href="#" class="items" title=""><img src="./img/brusselSprouts.png" alt=""></a>Sprouts<button name="Brussel-Sprouts" class="adding">Add Item</button></li>
+          <li>
+            <a href="#" class="items" title=""
+              ><img src="./img/apple.png" id="app" />
+              <div class="hide" style="height: 43vh; width: 20vw">
+                <canvas id="apple" width="600" height="600"></canvas>
+              </div></a
+            >Apple <button name="Apple" class="adding">Add Item</button>
+          </li>
+
+          <li>
+            <a href="#" class="items" title=""
+              ><img src="./img/avocado-transparent-2.png" id="avo"/>
+              <div class="hide" style="height: 43vh; width: 20vw">
+                <canvas id="avocado" width="600" height="600"></canvas>
+              </div></a
+            >Avocado<button name="Avocado" class="adding">Add Item</button>
+          </li>
+
+          <li>
+            <a href="#" class="items" title=""
+              ><img src="./img/banana.png" id="ban" />
+              <div class="hide" style="height: 43vh; width: 20vw">
+                <canvas id="banana" width="600" height="600"></canvas>
+              </div></a
+            >Banana<button name="Banana" class="adding">Add Item</button>
+          </li>
+
+          <li>
+            <a href="#" class="items" title=""
+              ><img src="./img/egg.png" id="egg" />
+              <div class="hide" style="height: 43vh; width: 20vw">
+                <canvas id="egg" width="600" height="600"></canvas>
+              </div></a
+            >Egg<button name="Egg" class="adding">Add Item</button>
+          </li>
+
+          <li>
+            <a href="#" class="items" title=""
+              ><img src="./img/turkey.png" id="tur" />
+              <div class="hide" style="height: 43vh; width: 20vw">
+                <canvas id="turkey" width="600" height="600"></canvas>
+              </div></a
+            >Turkey<button name="Turkey" class="adding">Add Item</button>
+          </li>
+
+          <li>
+            <a href="#" class="items" title=""
+              ><img src="./img/chicken.png" id="chi" />
+              <div class="hide" style="height: 43vh; width: 20vw">
+                <canvas id="chicken" width="600" height="600"></canvas>
+              </div></a
+            >Chicken<button name="Chicken" class="adding">Add Item</button>
+          </li>
+          
+          <li>
+            <a href="#" class="items" title=""
+              ><img src="./img/beef.png" id="bee" />
+              <div class="hide" style="height: 43vh; width: 20vw">
+                <canvas id="beef" width="600" height="600"></canvas>
+              </div></a
+            >Beef<button name="Beef" class="adding">Add Item</button>
+          </li>
+
+          <li>
+            <a href="#" class="items" title=""
+              ><img src="./img/salmon.png" id="sal" />
+              <div class="hide" style="height: 43vh; width: 20vw">
+                <canvas id="salmon" width="600" height="600"></canvas>
+              </div></a
+            >Salmon<button name="Salmon" class="adding">Add Item</button>
+          </li>
+
+          <li>
+            <a href="#" class="items" title=""
+              ><img src="./img/shrimp.png" id="shr" />
+              <div class="hide" style="height: 43vh; width: 20vw">
+                <canvas id="shrimp" width="600" height="600"></canvas>
+              </div></a
+            >Shrimp<button name="Shrimp" class="adding">Add Item</button>
+          </li>
+
+          <li>
+            <a href="#" class="items" title=""
+              ><img src="./img/tuna.png" id="tun" />
+              <div class="hide" style="height: 43vh; width: 20vw">
+                <canvas id="tuna" width="600" height="600"></canvas>
+              </div></a
+            >Tuna<button name="Tuna" class="adding">Add Item</button>
+          </li>
+
+          <li>
+            <a href="#" class="items" title=""
+              ><img src="./img/broccoli.png" id="bro" />
+              <div class="hide" style="height: 43vh; width: 20vw">
+                <canvas id="broccoli" width="600" height="600"></canvas>
+              </div></a
+            >Broccoli<button name="Broccoli" class="adding">Add Item</button>
+          </li>
+
+          <li>
+            <a href="#" class="items" title=""
+              ><img src="./img/brusselSprouts.png" id="spr" />
+              <div class="hide" style="height: 43vh; width: 20vw">
+                <canvas id="sprouts" width="600" height="600"></canvas>
+              </div></a
+            >Sprouts<button name="Brussel-Sprouts" class="adding">
+              Add Item
+            </button>
+          </li>
+
         </ul>
       </div>
-
+<!-- body -->
       <div class="body-shape">
         <h2 id="shape">Body Shape In A Year</h2>
-
-        <img id="person" src="./img/fatperson.png" alt="./img/fatperson.png">
+        <img id="person" src="./img/fatperson.png" alt="./img/fatperson.png" />
       </div>
-      
+
+<!-- summary -->
       <div class="side-summary">
         <h2>Menu Summary:</h2>
-         
-        <div class="container" style="height:80vh; width:20vw">
+
+        <div class="container" style="height: 80vh; width: 20vw">
           <canvas id="total" width="600" height="600"></canvas>
         </div>
 
@@ -68,9 +163,7 @@
           <li>Total Protein Content:</li>
           <li>Total Carbohydrates Content:</li>
         </ul>
-      </div> 
-
+      </div>
     </div>
-    </body>
-    
-    </html>
+  </body>
+</html>

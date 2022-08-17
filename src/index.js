@@ -1,10 +1,20 @@
 // import * as d3 from "d3";
 import {appleChart} from "./scripts/appleCharts"
+import {avocadoChart} from "./scripts/avocadoCharts"
+import {bananaChart} from "./scripts/bananaCharts"
 
 
-document.addEventListener("DOMContentLoaded",function(){
+document.addEventListener("DOMContentLoaded",async function(){
+    await appleChart();
+    await avocadoChart();
+    await bananaChart();
+
+    const appleObj = JSON.parse(localStorage.getItem('appleObj'))
+    const avocadoObj = JSON.parse(localStorage.getItem('avocadoObj'))
+
+    // console.log(avocadoObj)
+    // console.log(appleObj)
     
-    // appleChart();
     
 const men = document.getElementsByClassName("menu")[0]
 men.addEventListener('click', (e)=>{

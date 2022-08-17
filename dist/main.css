@@ -23,10 +23,12 @@ body{
 #initial{
     display: flex;
     justify-content: center;
-    border: 1px solid black;
+    /* border-bottom: 1px solid black; */
+    margin-top: 0px;
     padding: 10px;
-    background-color: lightblue;
+    background:linear-gradient(to top, rgb(170, 209, 223), white);
     font-family: 'Courier New', Courier, monospace;
+    font-size: 50px;
 }
 
 #second{
@@ -49,8 +51,36 @@ body{
     display:flex ;
     flex-direction: column;
     margin-left: -100px;
+    margin-right: 50px;
+
 }
 
+.hide {
+    display: none;
+    position: absolute;
+    background: white;
+    border-radius: 10px;
+    border: 1px solid black;
+    z-index: 1;
+}
+
+#app:hover + .hide,
+#avo:hover + .hide,
+#ban:hover + .hide,
+#egg:hover + .hide,
+#tur:hover + .hide,
+#chi:hover + .hide,
+#bee:hover + .hide,
+#sal:hover + .hide,
+#shr:hover + .hide,
+#tun:hover + .hide,
+#bro:hover + .hide,
+#spr:hover + .hide {
+    display: block;
+    color: red;
+    margin-top: -425px;
+    margin-left: 70px;
+  }
 
 #menut{
     display: flex;
@@ -115,7 +145,10 @@ li{
     display: flex;
     width: 400px;
     height: 400px;
-    padding: 100px;
+    margin: 100px;
+    /* padding: 100px; */
+    position: relative;
+    z-index: -1;
 }
 
 
