@@ -111,8 +111,9 @@ men.addEventListener('click', async (e)=>{
     chart.destroy();
     chart = await totalChart(summary);
     document.querySelector('#person').remove();
-
     body = change()
+    e.preventDefault();
+
 })
     
 })

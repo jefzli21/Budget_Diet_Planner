@@ -41,6 +41,10 @@ body{
   
 }
 
+#logo{
+    margin-right: 10px;
+}
+
 #icons{
     margin-right: -205px;
     margin-left: 100px;
@@ -77,6 +81,7 @@ body{
     display: flex;
     justify-content: space-evenly;
     align-items: baseline;
+    margin-top: 30px;
 }
 
 
@@ -120,6 +125,7 @@ body{
 #menut{
     display: flex;
     justify-content: center;
+    margin-left: 50px;
 }
 
 #ins{
@@ -133,6 +139,8 @@ body{
 .menu{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    margin-top: -10px;
+    /* margin-left: -10px; */
 
 }
 
@@ -159,6 +167,14 @@ li{
     padding: 10px;
 }
 
+/* mid */
+
+.mid{
+    display: flex;
+    flex-direction: column;
+}
+
+
 
 /* body */
 
@@ -172,11 +188,21 @@ li{
 
 }
 
-/* #shape{
+/* bmi */
+/* 
+.BMIcalc{
     display: flex;
-    justify-content: center;
-    padding-bottom: 60px;
+    flex-direction: column;
+}
+
+.BMIcalc>input{
+    width: 100px;
+    margin: 10px;
 } */
+
+#shape{
+    /* opacity: .8; */
+}
 
 #person{
     display: flex;
@@ -186,6 +212,9 @@ li{
     margin-left: -40px;
     margin-right: 300px;
     z-index: 0;
+    /* opacity: 1; */
+    /* transition: opacity 1s ease-in-out; */
+    /* transition-delay: 10s; */
 }
 
 
