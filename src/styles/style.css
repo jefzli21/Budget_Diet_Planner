@@ -30,12 +30,12 @@ body{
 } */
 
 
-#link{
-    /* padding:100px */
+#link:hover{
+    /* background-color: yellow; */
  }
 
-#git{
-  
+#git:hover{
+    /* background-color: yellow; */
 }
 
 #logo{
