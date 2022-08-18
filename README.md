@@ -2,7 +2,7 @@
 
 ## Background
 
-I plan on creating a webpage that can help people to create a planner to help their diet plans stay on track. With a variety of healthy food options suitable for building a healthy diet menu, the user will be able to build their own menu on the sidebar. Meanwhile, the webpage will also show each food option’s calories, protein, and fat content. Most importantly, to differentiate from other similar diet planning apps, this webpage will show the average price for one serving of the selected food option. At the bottom of the sidebar, after all the food options have been added, the total calories, protein, and fat content will be summed up and displayed. It will also include the total estimated price of this meal plan. The unique aspect of this planner would be the financial data that I will be drawing from the Bureau of Labor Statistic.
+I plan on creating a webpage that can help people to create a planner to help their diet plans stay on track. With a variety of healthy food options suitable for building a healthy diet menu, the user will be able to build their own menu on the sidebar. Meanwhile, the webpage will also show each food option’s calories, protein, and fat content. Most importantly, to differentiate from other similar diet planning apps, this webpage will show the predicted body shape of the user if they followed the diet plan
 
 
 
@@ -12,18 +12,17 @@ With this Budget Diet Planner, users will be able to:
 
 See the nutritional data and average cost on a variety of healthy food
 Select food items and log them into the planner in the sidebar
-See a calculated total nutritional value and predicted cost of the diet plan
-Remove unwant items from the list
+See a calculated total nutritional value of the diet plan
+The website will show the predicted body shape in six months of the user if followed strictly by the chosen diet plan.
 
 In addition, this project will include:
-As a bonus feature, the website will show the predicted body shape in six months of the user if followed strictly by the chosen diet plan.
+As a bonus feature, user can remove unwant items from the list
 An About modal describing the background and the usage of the planner
 A production README
 
 
 ## Wireframes
 Includes healthy food options
-Price
 calories 
 Fat
 Protein
@@ -32,7 +31,7 @@ Functions
 
 Adding food options to a toolbar, like a list
 Calculate total fat, protein, and calories
-Return total predicted average cost of the diet plan
+Return the predicted body shape of the user following the diet plan
 
 https://wireframe.cc/fWH5FG
 
@@ -40,12 +39,17 @@ https://wireframe.cc/fWH5FG
 ## Technologies, Libraries, APIs
 This project will be implemented with the following technologies:
 
-The API from Bureau of Labor Statistics for average food prices
-The API from USDA for nutritional value
-D3 library to beautify the page
-API:
-https://fdc.nal.usda.gov/api-guide.html
-https://www.bls.gov/developers/api_signature_v2.htm
+languages:
+HTML,
+CSS,
+JavaScript
+
+libraries:
+Chart.js
+
+API
+The API from calorie ninja:
+'https://api.calorieninjas.com/v1/nutrition?query=' + query
 
 
 ## Implementation Timeline
