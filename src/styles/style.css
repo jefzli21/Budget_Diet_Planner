@@ -6,11 +6,11 @@ ul,li{
 
  html,body
 {
-    width: 100%;
+    /* width: 100%;
     height: 100%;
     margin: 0px;
-    padding: 0px;
-    overflow-x: hidden; 
+    padding: 0px; */
+    /* overflow-x: hidden;  */
 } 
 
 body{
@@ -24,13 +24,40 @@ body{
     align-items: center;
 } */
 
-#initial{
+/* .top{
+    display: flex;
+    justify-content: space-around;
+} */
+
+
+#link{
+    /* padding:100px */
+ }
+
+#git{
+  
+}
+
+#icons{
+    margin-right: -205px;
+    margin-left: 100px;
+}
+
+
+.top{
     display: flex;
     justify-content: center;
     /* border-bottom: 1px solid black; */
-    margin-top: 0px;
-    padding: 10px;
-    background:linear-gradient(to bottom, rgb(0, 0, 0), rgb(87, 68, 143));
+    /* background:linear-gradient(to bottom, rgb(0, 0, 0), rgb(87, 68, 143)); */
+    align-items:center;
+    background-image: image("./img/head.jpg");
+  
+}
+
+#initial{
+    /* margin-top: 0px; */
+    /* display: flex; */
+    /* justify-content: center; */
     font-family:'Times New Roman', Times, serif;
     font-size: 50px;
     color: white;
@@ -62,7 +89,7 @@ body{
 
 .hide {
     display: none;
-    position: fixed;
+    position:absolute;
     background: white;
     border-radius: 10px;
     border: 1px solid black;
@@ -83,7 +110,7 @@ body{
 #spr:hover + .hide {
     display: block;
     color: red;
-    margin-top: -425px;
+    margin-top: -375px;
     margin-left: 70px;
   }
 

@@ -20,7 +20,7 @@ if(!sprextract){
         
 }
 
-console.log(sprextract)
+// console.log(sprextract)
 
 let food = document.getElementById('sprouts').getContext('2d');
 
