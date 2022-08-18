@@ -1,7 +1,7 @@
 
 
-export async function bananaChart(){
-var query = 'banana'
+export async function tunaChart(){
+var query = 'tuna'
 let url2 = 'https://api.calorieninjas.com/v1/nutrition?query=' + query
 
 const options2 = {
@@ -10,19 +10,19 @@ const options2 = {
     contentType: 'application/json'
 };
 
-let banextract = JSON.parse(localStorage.getItem('bananaObj'))
+let tunextract = JSON.parse(localStorage.getItem('tunaObj'))
 
-if(!banextract){
- banextract = await fetch(url2,options2)
+if(!tunextract){
+ tunextract = await fetch(url2,options2)
         .then(response => response.json())
         .catch(err => console.error(err));
-        localStorage.setItem('bananaObj', JSON.stringify(banextract.items[0]))
-
+        localStorage.setItem('tunaObj', JSON.stringify(tunextract.items[0]))
         // console.log(extract)
 }
 
 
-let food = document.getElementById('banana').getContext('2d');
+
+let food = document.getElementById('tuna').getContext('2d');
 
 let pieChart = new Chart(food, {
   type:'doughnut', // bar,horizontal bar, pie, line doughnut, radar, polarArea
@@ -30,7 +30,7 @@ let pieChart = new Chart(food, {
     labels:['carbohydrates_total_g','fat_total_g','protein_g'],
     datasets:[{
       label: 'Nutritions',
-      data:[banextract.carbohydrates_total_g,banextract.fat_total_g,banextract.protein_g],
+      data:[tunextract.carbohydrates_total_g,tunextract.fat_total_g,tunextract.protein_g],
       backgroundColor: ['green','red','purple'],
     //   radius:[100]
     }]

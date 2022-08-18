@@ -17,21 +17,30 @@ body{
     background: linear-gradient(to bottom, aqua, white);
 }
 
+/* .heads{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} */
+
 #initial{
     display: flex;
     justify-content: center;
-    border-bottom: 1px solid black;
+    /* border-bottom: 1px solid black; */
     margin-top: 0px;
     padding: 10px;
-    background:linear-gradient(to top, rgb(100, 195, 227), white);
-    font-family: 'Courier New', Courier, monospace;
+    background:linear-gradient(to bottom, rgb(0, 0, 0), rgb(87, 68, 143));
+    font-family:'Times New Roman', Times, serif;
     font-size: 50px;
+    color: white;
 }
 
 #second{
     display: flex;
     justify-content: center;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family:'Times New Roman', Times, serif;
+    
 }
 
 .all{
@@ -48,6 +57,7 @@ body{
     display:flex ;
     flex-direction: column;
     margin-left: -100px;
+    z-index: 9;
 }
 
 .hide {
@@ -56,6 +66,7 @@ body{
     background: white;
     border-radius: 10px;
     border: 1px solid black;
+    z-index: 10;
 }
 
 #app:hover + .hide,
@@ -123,23 +134,28 @@ li{
 
 .body-shape{
     display: flex;
+    justify-content: center;
     flex-direction: column;
-    margin-left: -300px;
+    /* margin-left: -300px; */
     position: relative;
+    align-items: baseline;
 
 }
 
-#shape{
+/* #shape{
     display: flex;
     justify-content: center;
     padding-bottom: 60px;
-}
+} */
 
 #person{
     display: flex;
-    width: 400px;
+    width: 300px;
     height: 400px;
-    padding: 100px;
+    margin-top: 100px;
+    margin-left: -40px;
+    margin-right: 300px;
+    z-index: 0;
 }
 
 
@@ -148,24 +164,42 @@ li{
 .side-summary{
     display: flex;
     flex-direction: column;
-    align-items:center;
-    /* margin-right: 300px; ; */
+    align-items:left;
     position: relative;
     margin-left: -300px;
+}
 
+#menu-sum{
+    display: flex;
+    justify-content: center;
 }
 
 .container{
-  margin-bottom: -200px;
+  /* margin-bottom: -200px; */
+}
+
+.summary-items>li{
+ margin-bottom: -60px;
+}
+
+.summary-items{
+    display: flex;
+    flex-direction: column;
+    align-items:baseline;
+    
+    
 }
 
 .totals{
     display: flex;
     flex-direction: column;
     align-items: baseline;
+    margin-top: 80px;
     
 }
 
 .totals>li{
-    margin-top: -50px;
+    margin-top: -80px;
+    flex-direction: row;
+    align-items: baseline;
 }

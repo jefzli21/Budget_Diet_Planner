@@ -1,7 +1,7 @@
 
 
-export async function bananaChart(){
-var query = 'banana'
+export async function chickenChart(){
+var query = 'chicken'
 let url2 = 'https://api.calorieninjas.com/v1/nutrition?query=' + query
 
 const options2 = {
@@ -10,19 +10,19 @@ const options2 = {
     contentType: 'application/json'
 };
 
-let banextract = JSON.parse(localStorage.getItem('bananaObj'))
+let chiextract = JSON.parse(localStorage.getItem('chickenObj'))
 
-if(!banextract){
- banextract = await fetch(url2,options2)
+if(!chiextract){
+ chiextract = await fetch(url2,options2)
         .then(response => response.json())
         .catch(err => console.error(err));
-        localStorage.setItem('bananaObj', JSON.stringify(banextract.items[0]))
-
+        localStorage.setItem('chickenObj', JSON.stringify(chiextract.items[0]))
         // console.log(extract)
 }
 
 
-let food = document.getElementById('banana').getContext('2d');
+
+let food = document.getElementById('chicken').getContext('2d');
 
 let pieChart = new Chart(food, {
   type:'doughnut', // bar,horizontal bar, pie, line doughnut, radar, polarArea
@@ -30,7 +30,7 @@ let pieChart = new Chart(food, {
     labels:['carbohydrates_total_g','fat_total_g','protein_g'],
     datasets:[{
       label: 'Nutritions',
-      data:[banextract.carbohydrates_total_g,banextract.fat_total_g,banextract.protein_g],
+      data:[chiextract.carbohydrates_total_g,chiextract.fat_total_g,chiextract.protein_g],
       backgroundColor: ['green','red','purple'],
     //   radius:[100]
     }]

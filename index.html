@@ -12,7 +12,7 @@
   </head>
 
   <body>
-    <div>
+    <div class="heads">
       <h1 id="initial">See You Next Year Diet Planner</h1>
       <h2 id="second">
         See what happens if you eat this self-designed diet for a Year
@@ -32,7 +32,7 @@
           <li>
             <a href="#" class="items" title=""
               ><img src="./img/apple.png" id="app" />
-              <div class="hide" style="height: 43vh; width: 20vw">
+              <div class="hide" style="height:43vh; width:20vw">
                 <canvas id="apple" width="600" height="600"></canvas>
               </div></a
             >Apple <button name="Apple" class="adding">Add Item</button>
@@ -60,7 +60,7 @@
             <a href="#" class="items" title=""
               ><img src="./img/egg.png" id="egg" />
               <div class="hide" style="height: 43vh; width: 20vw">
-                <canvas id="egg" width="600" height="600"></canvas>
+                <canvas id="eggc" width="600" height="600"></canvas>
               </div></a
             >Egg<button name="Egg" class="adding">Add Item</button>
           </li>
@@ -134,7 +134,7 @@
               <div class="hide" style="height: 43vh; width: 20vw">
                 <canvas id="sprouts" width="600" height="600"></canvas>
               </div></a
-            >Sprouts<button name="Brussel-Sprouts" class="adding">
+            >Sprouts<button name="Sprouts" class="adding">
               Add Item
             </button>
           </li>
@@ -144,24 +144,28 @@
 <!-- body -->
       <div class="body-shape">
         <h2 id="shape">Body Shape In A Year</h2>
-        <img id="person" src="./img/fatperson.png" alt="./img/fatperson.png" />
+        <div id="shap">
+          <!-- <img id="person" src="./img/Godzilla-Download-PNG.png" alt="./img/fatperson.png" /> -->
+        </div>
       </div>
 
 <!-- summary -->
       <div class="side-summary">
-        <h2>Menu Summary:</h2>
+        <h2 id="menu-sum">Menu Summary:</h2>
 
-        <div class="container" style="height: 80vh; width: 20vw">
+        <div class="container" style="height: 40vh; width: 20vw">
           <canvas id="total" width="600" height="600"></canvas>
         </div>
 
-        <ul class="summary-items"></ul>
+        <ul class="summary-items">
+          <li>Selected Items:</li>
+        </ul>
 
         <ul class="totals">
-          <li>Total Calories:</li>
-          <li>Total Fat Content:</li>
-          <li>Total Protein Content:</li>
-          <li>Total Carbohydrates Content:</li>
+          <li>Total Calories:<p id="total-cal">0</p></li>
+          <li>Total Fat Content:<p id="total-fat">0</p></li>
+          <li>Total Protein Content:<p id="total-protein">0</p></li>
+          <li>Total Carbohydrates Content:<p id="total-carb">0</p></li>
         </ul>
       </div>
     </div>

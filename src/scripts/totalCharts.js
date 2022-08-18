@@ -1,39 +1,21 @@
 
-export async function totalChart(){
-    var query = 'apple'
-    let url2 = 'https://api.calorieninjas.com/v1/nutrition?query=' + query
-    
-    const options2 = {
-        method: 'GET',
-        headers: { 'X-Api-Key': 'YBlM6hoP9sss2TahZxMmzQ==7bCcDDaLTNDilKG4'},
-        contentType: 'application/json'
-    };
-    
-    let extract = await fetch(url2,options2)
-            .then(response => response.json())
-            .catch(err => console.error(err));
-    
-            console.log(extract)
-    
-    
-    const data1 = [
-        {name: `carbohydrates_total_g`, value: extract.items[0].carbohydrates_total_g},
-        {name: `fat_total_g`, value: extract.items[0].fat_total_g},
-        {name: `protein_g`, value: extract.items[0].protein_g}
-    ]
-    
-    const data = [extract.items[0].carbohydrates_total_g,extract.items[0].fat_total_g,extract.items[0].protein_g]
-    
-    
-    let chickenBreast = document.getElementById('total').getContext('2d');
-    
-    let pieChart = new Chart(chickenBreast, {
-      type:'pie', // bar,horizontal bar, pie, line doughnut, radar, polarArea
+  
+export async function totalChart(summary){
+  
+
+  let total_fat = parseInt(document.getElementById('total-fat').innerText)
+  let total_protein = parseInt(document.getElementById('total-protein').innerText)
+  let total_carb = parseInt(document.getElementById("total-carb").innerText)
+  
+  
+  
+  let pieChart = new Chart(summary, {
+      type:'doughnut', // bar,horizontal bar, pie, line doughnut, radar, polarArea
       data:{
-        labels:['carbohydrates_total_g','fat_total_g','protein_g'],
+        labels:['Total Carbohydrates','Total Fat','Total Protein'],
         datasets:[{
           label: 'Nutritions',
-          data:[extract.items[0].carbohydrates_total_g,extract.items[0].fat_total_g,extract.items[0].protein_g],
+          data:[total_carb,total_fat,total_protein],
           backgroundColor: ['green','red','purple'],
         //   radius:[100]
         }]
@@ -44,6 +26,6 @@ export async function totalChart(){
       }
     });
     
-    
+    return pieChart
     }
     
