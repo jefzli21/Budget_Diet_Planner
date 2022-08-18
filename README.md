@@ -1,4 +1,4 @@
-# Budget_Diet_Planner
+# See_You_Next_Year_Planner
 
 ## Background
 
@@ -8,12 +8,12 @@ I plan on creating a webpage that can help people to create a planner to help th
 
 ## Functionality & MVPs
 
-With this Budget Diet Planner, users will be able to:
+With this See You Next Year Diet Planner, users will be able to:
 
-See the nutritional data and average cost on a variety of healthy food
+See the nutritional data on a variety of healthy food
 Select food items and log them into the planner in the sidebar
 See a calculated total nutritional value of the diet plan
-The website will show the predicted body shape in six months of the user if followed strictly by the chosen diet plan.
+The website will show the predicted body shape in a year of the user if followed strictly by the chosen diet plan.
 
 In addition, this project will include:
 As a bonus feature, user can remove unwant items from the list
