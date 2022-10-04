@@ -4,6 +4,9 @@
 
 I plan on creating a webpage that can help people to create a planner to help their diet plans stay on track. With a variety of healthy food options suitable for building a healthy diet menu, the user will be able to build their own menu on the sidebar. Meanwhile, the webpage will also show each food option’s calories, protein, and fat content. Most importantly, to differentiate from other similar diet planning apps, this webpage will show the predicted body shape of the user if they followed the diet plan
 
+## Live Link
+
+https://jefzli21.github.io/See_You_Next_Year_Diet_Planner/
 
 
 ## Functionality & MVPs
