@@ -152,8 +152,15 @@ li{
 .adding{
     width: 90px;
     border-radius: 10px;
-    background-color: lightcoral;
+    background-color: rgb(245, 255, 61);
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
 
+}
+
+.adding:hover{
+    box-shadow: 0px 0px 5px;
 }
 
 
@@ -242,9 +249,13 @@ li{
     display: flex;
     flex-direction: column;
     align-items:baseline;
-    
-    
+    overflow-y: scroll;
+    height: 11.5rem;
 }
+.summary-items::-webkit-scrollbar {
+    display: none;
+  }
+  
 
 .totals{
     display: flex;
