@@ -246,6 +246,8 @@ li{
 
 .summary-items>li{
  margin-bottom: -60px;
+ margin-left: 30px;
+
 }
 
 .summary-items{
@@ -253,12 +255,19 @@ li{
     flex-direction: column;
     align-items:baseline;
     overflow-y: scroll;
-    height: 11.5rem;
+    height: 7rem;
+    
 }
-.summary-items::-webkit-scrollbar {
+/* .summary-items::-webkit-scrollbar {
     display: none;
-  }
+  } */
   
+#selection{
+    display: flex;
+    justify-content: center;
+    margin-bottom: -15px;
+
+}
 
 .totals{
     display: flex;
